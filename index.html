@@ -1,0 +1,1277 @@
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&amp;display=swap" rel="stylesheet">
+        <link rel="icon" href="god.jpg">
+
+        <!--Let browser know website is optimized for mobile-->
+    
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script> 
+    </head>
+</html>
+
+<body>
+    
+    <body>
+
+        <div class="CONTROL_PANEL_MASTER hide">
+            <div class="fmxr">
+                <div class="row">
+                    <div class="input-field col s12">
+                        
+                        <div class="news_information" id="info_1" contenteditable="true">
+                            
+                        </div>
+                        <input  id="date_1" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('1')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_2" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_2" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('2')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_3" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_3" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('3')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_4" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_4" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('4')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_5" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_5" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('5')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_6" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_6" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('6')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_7" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_7" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('7')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_8" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_8" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('8')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_9" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_9" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('9')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_10" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_10" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('10')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_11" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_11" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('11')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_12" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_12" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('12')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_13" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_13" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('13')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_14" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_14" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('14')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_15" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_15" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('15')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_16" contenteditable="true">
+                            
+                        </div>
+                        <input  id="date_16" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('16')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_17" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_17" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('17')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_18" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_18" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('18')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_19" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_19" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('19')">Save</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="news_information" id="info_20" contenteditable="true">
+                            yes
+                        </div>
+                        <input  id="date_20" type="text" class="all_inputs date_inputs" placeholder="Date/time">
+                        <div class="fmxr_btn_bx">
+                            <div class="preloader-wrapper small active">
+                                <div class="spinner-layer spinner-blue-only">
+                                  <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                  </div><div class="gap-patch">
+                                    <div class="circle"></div>
+                                  </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            <a class="save_btn_field btn" onclick="saveNewsCapsule('20')">Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="LOGIN-PAGE">
+            <img src="p1.png" alt="">
+
+            <div id="topBX" class="darkk">
+                <span id="site_name">
+                    SSN<span class="yellow-text">SEARCH</span>
+                </span>
+            </div>
+
+            <div class="darkk allForm" id="loginForm">
+                <div class="lf_name">
+                    <span class="yellow-text">Login</span>
+                    <p class="green-text accCreated"></p>
+                </div>
+
+                <div class="lm_form_group_field">
+                    <label for="lm_username">Username*</label>
+                    <input type="text" name="lm_username" id="lm_username" class="lm_inputField white">
+                </div>
+                <br>
+                <div class="lm_form_group_field">
+                    <label for="lm_password">Password*</label>
+                    <input type="text" name="lm_password" id="lm_password" class="lm_inputField white">
+                </div>
+                <br>
+                <div class="login_btns all_logins">
+                    <p class="login_error all_errors red-text"></p>
+                    <a onclick="move2Register();">Register</a>
+                    <a onclick="loginUserGod(); ADMIN();">Login</a>
+                </div>
+                <br>
+                <div class="lm_information grey-text">
+                    <p>If you are having trouble logging in, clear the browser's cookies and cache.</p>
+                </div>
+            </div>
+
+            <div class="darkk allForm hide" id="registerForm">
+                <div class="lf_name">
+                    <span class="yellow-text" id="lp_register_btn">Register</span>
+                </div>
+
+                <div class="lm_form_group_field">
+                    <label for="lm_username">Username*</label>
+                    <input type="text" name="lm_username" id="lm_username_reg" class="lm_inputField white">
+                </div>
+                <br>
+                <div class="lm_form_group_field">
+                    <label for="lm_password">Password*</label>
+                    <input type="text" name="lm_password" id="lm_password_reg" class="lm_inputField white">
+                </div>
+                <br>
+                <div class="lm_form_group_field">
+                    <label for="lm_password">Confirm Password*</label>
+                    <input type="text" name="lm_password" id="lm_password_confirm_reg" class="lm_inputField white">
+                </div>
+
+                <br>
+                <div class="all_logins" id="register_btns">
+                    <p class="red-text error"></p>
+                    <a id="signUp_btn" onclick="registerUser();">Register</a>
+                </div>
+                <br>
+                <div class="lm_information grey-text" style="text-align: center;">
+                    <p>
+                        <a onclick="move2Login()">Back to login page</a>
+                        <br>
+                        Problem with registration? Send message to
+                        <br>
+                        <a>ssnsearch98@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ACCOUNT-PAGE">
+            <div class="notice">
+                <div class="notice_card flow-text">
+                    <span class="">Your Account is Inactive</span>
+                    <hr>
+                    <div class="notice_info">
+                        <span class="red-text">
+                            You can't observe available materials and use service in full.
+                        </span>
+                        <br>
+                        <span class="white-text">
+                            Please top up the account for 100$ for activation.
+                        </span>
+
+                    </div>
+                    <br>
+                    <div class="notice_btn">
+                        <a class="btn green" onclick="CLOSE_NOTICE();">accept</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ap_header">
+                <div class="ap_bxx ap_bxx1">
+                    <span id="site_name" class="mediumScreenHide">
+                        SSN<span class="yellow-text">SEARCH</span>
+                    </span>
+
+                    <span class="yellow-text menuBx" onclick="openMenu();">
+                        <i class="material-icons">dehaze</i>
+                    </span>
+
+                    <span class="server_time">
+                        Server Time: <span id="server_time" class="yellow-text">05:05:21</span>
+                    </span>
+                </div>
+                
+                <div class="ap_bxx ap_bxx2">
+                    <span class="addBalanceBx yellow-text" onclick="addBalance();">
+                        Add Balance
+                    </span>
+                    <span class="balanceBx"  onclick="showBalanceMore();">
+                        Balance:
+
+                        <span class="yellow-text" id="balanceTXT">$ 0.00</span>
+
+                        <div class="balance_2">
+                            <span class="b_title">Your Balance</span>
+                            <br>
+                            <hr>
+                            <span>
+                                Credit: 0 $
+                            </span>
+                            <hr>
+                            <span>
+                                Bonuses: 0 $
+                            </span>
+                        </div>
+
+                        <div class="balance__2">
+                            <span>
+                                <a href="mailto:report@ssnsearch.me">Support</a>
+                            </span>
+                            <hr>
+                           
+                            <span>
+                                Settings
+                            </span>
+                            <hr>
+                            <span>
+                                Rules
+                            </span>
+                            <hr>
+                            <span class="logoutUI">
+                                <i class="material-icons">subdirectory_arrow_left</i>
+                                <span class="right" onclick="logout();">Logout  [  <span id="nameOfUser">Daniesdasdasl</span> ]</span>
+                            </span>
+                        </div>
+                    </span>
+                    
+                    <span class="yellow-text logoutBx lgbx" onclick="showBalanceMoree();">
+                       <img src="god.jpg" alt="">
+                    </span>
+                    
+                    <span class="yellow-text logoutBx hide deprecated" onclick="logout();">
+                        <i class="material-icons">subdirectory_arrow_left</i>
+                        <span>Logout</span>
+                        <span class="userNameBx"><br> [  <span id="nameOfUser">Daniesdasdasl</span> ]</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="workForProfit wwf">
+                <div class="nb_col_2 menu_mobile">
+                    <ul id="menu_products_list" class="menu_ul">
+                        <span class="yellow-text hackerface" onclick="showBalanceMoree();">
+                            <img src="god.jpg" alt="">
+                         </span>
+                        <li class="" onclick="SHOW_NEWS();">
+                            <i class="material-icons">home</i>
+                            <span class="menu_lists all_lists">Home</span>
+                        </li>
+                    
+                        <li onclick="SHOW_NEWS();">
+                            <div class="">
+                                <i class="material-icons">library_books</i>
+                                <span class="menu_lists" onclick="SHOW_NEWS();">News</span>
+                            </div>
+                        </li>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">assistant</i>
+                                <span class="menu_lists all_lists">Advert</span>
+                            </div>
+                        </li>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">vpn_key</i>
+                                <span class="menu_lists all_lists">API</span>
+                            </div>
+                        </li>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">credit_card</i>
+                                <span class="menu_lists all_lists">CC Checker</span>
+                                <i class="material-icons stayRight">arrow_drop_down</i>
+                            </div>
+                        </li>
+                        <div class="bx_more_1 shb" >
+                            <i class="material-icons">credit_card</i>
+                                <span class="menu_lists all_lists">Buy Credit/Debit Cards</span>
+                            <br>
+                            <i class="material-icons">center_focus_strong</i>
+                                <span class="menu_lists all_lists">Buy Dumps with Pins</span>
+                            <br>
+                        </div>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">card_travel</i>
+                                <span class="menu_lists all_lists">Business Tools</span>
+                                <i class="material-icons stayRight">arrow_drop_down</i>
+                            </div>
+                        </li>
+                        <div class="bx_more_1">
+                            <i class="material-icons">card_travel</i>
+                            <span class="menu_lists all_lists">US corporations</span>
+                            <i class="material-icons smx">star</i>
+
+                        </div>
+                        
+                
+                        
+                      
+                        
+                        <li>
+                            <div class="bx_more">
+                                <i class="material-icons">card_membership</i>
+                                <span class="menu_lists all_lists">Fedex,Usps</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bx_more">
+                                <i class="material-icons">collections</i>
+                                <span class="menu_lists all_lists">Flood</span>
+
+                                <i class="material-icons stayRight">arrow_drop_down</i>
+                            </div>
+                        </li>
+                        <div class="bx_more_1 shb">
+                            <i class="material-icons">call_end</i>
+                            <span class="menu_lists all_lists">Call Flood</span>
+                                <br>
+                            <i class="material-icons">cast</i>
+                            <span class="menu_lists all_lists">Email Flood</span>
+                            <br>
+                            <i class="material-icons">directions</i>
+                            <span class="menu_lists all_lists">Sms Flood</span>
+                        </div>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">contacts</i>
+                                <span class="menu_lists all_lists">Personal Info</span>
+
+                                <i class="material-icons stayRight">arrow_drop_down</i>
+                            </div>
+                        </li>
+                            <div class="bx_more_1">
+                               
+
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">chrome_reader_mode</i>
+                                        <span class="menu_lists all_lists">Ssn</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">contact_phone</i>
+                                        <span class="menu_lists all_lists">Cpn</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">directions</i>
+                                        <span class="menu_lists all_lists">Background report</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">directions_car</i>
+                                        <span class="menu_lists all_lists">Cars</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">directions_car</i>
+                                        <span class="menu_lists all_lists">DL Search</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">contacts</i>
+                                        <span class="menu_lists all_lists">MVR Report</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">content_paste</i>
+                                        <span class="menu_lists all_lists">Personals Info USA/ DOB search</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">priority_high</i>
+                                        <span class="menu_lists all_lists">Phone info</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">directions</i>
+                                        <span class="menu_lists all_lists">Pros + DL + Credit Score</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">account_box</i>
+                                        <span class="menu_lists all_lists">Random FULLz</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">account_box</i>
+                                        <span class="menu_lists all_lists">Real scans</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">call_split</i>
+                                        <span class="menu_lists all_lists">Add Phone To Public Records</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">account_box</i>
+                                        <span class="menu_lists all_lists">Ssn Any Year - MANUAL</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">contacts</i>
+                                       <span class="menu_lists all_lists">UI check</span>
+                                    </div>
+                                </li>
+                            
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">credit_card</i>
+                                        <span class="menu_lists all_lists">Credit score/report/Employer/Freeze</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">contacts</i>
+                                        <span class="menu_lists all_lists">MMN search</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">report_problem</i>
+                                        <span class="menu_lists all_lists">Persons Info USA / DOB search</span>
+                                    </div>
+                                </li>
+                                <li class="shb">
+                                    <div class="bx_more">
+                                        <i class="material-icons">account_box</i>
+                                        <span class="menu_lists all_lists">Physicians + DEA#</span>
+                                    </div>
+                                </li>
+                                
+                                
+                            </div>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">local_phone</i>
+                                <span class="menu_lists all_lists">Telephony</span>
+
+                                <i class="material-icons stayRight">arrow_drop_down</i>
+                            </div>
+                        </li>
+                        <div class="bx_more_1">
+                            <i class="material-icons">settings_phone</i>
+                            <span class="menu_lists all_lists">Free VOIP-Mobile</span>
+                                <br>
+                            <i class="material-icons">priority_high</i>
+                            <span class="menu_lists all_lists">Real Sim USA</span>
+                            <br>
+                            <i class="material-icons">local_phone</i>
+                            <span class="menu_lists all_lists">Sip</span>
+                            <br>
+                            <i class="material-icons">comment</i>
+                            <span class="menu_lists all_lists">VOIP - MOBILE</span>
+                        </div>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">local_play</i>
+                                <span class="menu_lists all_lists">Ticket</span>
+                            </div>
+                        </li>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">airplay</i>
+                                <span class="menu_lists all_lists">VPNs / Socks /RDPs</span>
+                            </div>
+                        </li>
+                        <li class="shb">
+                            <div class="bx_more">
+                                <i class="material-icons">account_balance</i>
+                                <span class="menu_lists all_lists">Escrow</span>
+                            </div>
+                        </li>
+                        <br><br><br><br><br>
+
+                        <li class="hide">
+                            <div class="bx_more">
+                                <i class="material-icons">library_books</i>
+                                <span class="menu_lists all_lists">News</span>
+
+                                <i class="material-icons stayRight">arrow_drop_down</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nb_col_3" onclick="closeMenu();">
+                    <div class="wwf_bx flow-text">
+                        <p> <span class="yellow-text">WE</span> WORK <span class="yellow-text">FOR YOUR</span> PROFIT</p>
+                    </div>
+
+                    <div class="inactive_bx SEC">
+                        <p class="red white-text">
+                            Your account is inactive at the moment. <br>
+                            Kindly top up the account for $100 for activation.
+                        </p>
+                    </div>
+
+                    <div class="btc_arena SEC">
+                        <h3>BTC</h3>
+
+                        <p>Note: Your account would be activated within 120 seconds after payment</p>
+                        <span>Bitcoin address to transfer funds:</span>
+                     
+                        <span id="btc_address">
+                            <p id="btc_p" onclick="BTC_TRANSACTION_UPDATE();">13sHhJb6EsejbYMCaFA4Dd71yUPEZ8mwvm</p>
+                        </span>
+                        <div class="btc_click_to_copy c_copy" onclick="copyToClipboard(); BTC_TRANSACTION_UPDATE();">
+                            <a>Click to copy</a>
+                        </div>
+                        <p style="font-style: italic;" class="yellow-text">
+                            After more than 1k$+ topup, you will get 10% bonus!
+                        </p>
+
+                        <p>
+                            Having Issues? Contact us: <a>report@ssnsearch.me</a>
+                        </p>
+                    </div>
+
+                    <div class="NEWS">
+                        <div class="news_section_bx">
+                            <div class="God_Title">
+                                <div class="">
+                                    <div class="home-phone-logo lkjx">
+                                        Home / News
+                                    </div>
+                                    <br>
+
+                                    <i class="material-icons xccx">account_box</i>
+                                     <span class="ggdx">News</span>                                                                                                               
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="capsules">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="">
+                                        SSN Any Year Auto FAST  - 9.99$
+                                    </p>
+                                </li>
+
+                                <li class="capsules">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="">
+                                        SSN Any Year Auto SLOW  - 7.99$
+                                    </p>
+                                </li>
+
+                                <li class="capsules">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="">
+                                        All your purchases will be automatically deleted after 14 days. please store them locally!
+                                    </p>
+                                </li>
+
+                                <li class="capsules">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="">
+                                        Price for Pros + DL# + Credit Score DISCOUNT 50%
+                                    </p>
+                                </li>
+
+                                <li class="capsules">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="">
+                                        DL# lookup only $14.99
+                                    </p>
+                                </li>
+
+                                <li class="capsules">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="">
+                                        FEDEX SHIPPING labels - AVAILABLE! IMPORTANT! The main feature of these labels is that the status of the track remains on "On FedEx vehicle for delivery", but in fact the package has been delivered.
+                                    </p>
+                                </li>
+
+                                
+                            </ul>
+
+
+
+
+
+                            <ul class="hide" style="display: hide;">
+                                <li class="capsules" id="capsule_1">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_1">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_1">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_2">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_2">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_2">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_3">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_3">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_3">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_4">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_4">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_4">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_5">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_5">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_5">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_6">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_6">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_6">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_7">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_7">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_7">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_8">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_8">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_8">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_9">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_9">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_9">
+                                    </p>
+                                </li>
+
+                                <!--9-10 -->
+
+                                <li class="capsules" id="capsule_11">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_11">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_11">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_12">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_12">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_12">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_13">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_13">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_13">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_14">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_14">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_14">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_15">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_15">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_15">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_16">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_16">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_16">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_17">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_17">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_17">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_18">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_18">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_18">
+                                    </p>
+                                </li>
+
+                                <li class="capsules" id="capsule_19">
+                                    <i class="material-icons left">date_range</i>
+                                    <span class="capsule_date left" id="capsule_date_19">
+                                        
+                                    </span>
+                                    <br>
+                                    <p class="capsule_news" id="capsule_news_19">
+                                    </p>
+                                </li>
+                                <div class="arrow_navigate anav">
+                                    <a onclick="SHOW_NOTICE();">1</a>
+                                    <a onclick="SHOW_NOTICE();">2</a>
+                                    <a onclick="SHOW_NOTICE();">3</a>
+                                    <a onclick="SHOW_NOTICE();">4</a>
+                                    <br>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <DIV class="footer">
+                        <div class="real_footer_man">
+                            <p class="yltxt">
+                                Copyright 2025  &#xa9;<a href="">ssnsearch.me</a>
+                                Designed with  <span class="red-text">&#x1F496;</span> by 
+                                <a href="">Spruko Russia.</a>
+                                All right reserved.
+                            </p>
+                        </div>
+                        <a href="mailto:report@ssnsearch.me" id="ft_email" class="yellow-text hide">Support</a>
+                        <br><br><br>
+                    </DIV>
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyBMz8TsTRocIoqRm-17-eaqrTPLBh5tiTo",
+                authDomain: "ghost-industry.firebaseapp.com",
+                projectId: "ghost-industry",
+                storageBucket: "ghost-industry.firebasestorage.app",
+                messagingSenderId: "63912372999",
+                appId: "1:63912372999:web:3e6a2caf8ee9fb83c733a2"
+            };
+          
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+          </script>
+   
+         <script src="index.js"></script>
+         <script src="controller.js"></script>
+       <!--JavaScript at end of body for optimized loading-->
+       <script type="text/javascript" src="materialize.min.js"></script>
+     
+   
+    </body>
+</body>
